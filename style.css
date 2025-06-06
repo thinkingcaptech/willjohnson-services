@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #181f2a;
+  color: #fff;
+  min-height: 100vh;
+}
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+header {
+  background: linear-gradient(135deg, #232f3b, #202832);
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+header p {
+  margin: .5rem 0 1.5rem 0;
+  font-size: 1.1rem;
+  color: #b6e2ff;
+}
+header nav a {
+  color: #7de2fc;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+header nav a:hover {
+  color: #b6e2ff;
+}
+h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #7de2fc;
+  border-bottom: 1px solid #202832;
+  padding-bottom: .5rem;
+}
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.service {
+  flex: 1 1 220px;
+  background: #222b3a;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(30,30,60,.15);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+.service h3 {
+  margin-top: 0;
+  color: #7de2fc;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  background: #222b3a;
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+input, textarea, button {
+  font: inherit;
+  border: none;
+  border-radius: .6rem;
+  padding: .7rem;
+}
+input, textarea {
+  background: #232f3b;
+  color: #fff;
+}
+button {
+  background: #7de2fc;
+  color: #222b3a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #b6e2ff;
+}
+footer {
+  text-align: center;
+  padding: 1.5rem 0 1rem 0;
+  font-size: .9rem;
+  color: #b6e2ff;
+  background: none;
+}
+@media (max-width: 650px) {
+  .service-list {
+    flex-direction: column;
+    gap: .7rem;
+  }
+  .container {
+    width: 98%;
+  }
+}
